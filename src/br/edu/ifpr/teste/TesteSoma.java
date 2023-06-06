@@ -2,19 +2,29 @@ package br.edu.ifpr.teste;
 
 public class TesteSoma{
 	public static void main(String[] args){
-		System.out.println(somar(1, 2));
-		System.out.println(somar("1", "2"));
-		System.out.println(somar(1, 2, 3, 4, 5));
-		int vetorInteiro[] = {1, 2, 3};
-		double vetorDouble[] = {1.5, 2.5, 3.5};
+//		System.out.println(somar(1, 2));
+//		System.out.println(somar("1", "2"));
+//		System.out.println(somar(1, 2, 3, 4, 5));
+//		int vetorInteiro[] = {1, 2, 3};
+//		double vetorDouble[] = {1.5, 2.5, 3.5};
+//		double resultado[] = somar(vetorInteiro, vetorDouble);		
+//		for(int i = 0; i < resultado.length; i++){
+//			System.out.println(resultado[i]);
+//		}
+		char[] x = {'a','b','c'};
+		System.out.println(somar(x));
+		System.out.println((int)somar(x));
 		
-		double resultado[] = somar(vetorInteiro, vetorDouble);
 		
-		for(int i = 0; i < resultado.length; i++){
-			System.out.println(resultado[i]);
-		}
 	}
 
+	public static char somar(char[] x) {
+		char total = 0;
+		for (char c: x) {
+			total += c;
+		}
+		return total;
+	}
 	
 	public static int somar(int x, int y){
 		int soma = x + y;
@@ -46,7 +56,5 @@ public class TesteSoma{
 			return resultado;
 		}
 	}
-	public static void somar(char y[]){
-		
-	}
+	
 } 
