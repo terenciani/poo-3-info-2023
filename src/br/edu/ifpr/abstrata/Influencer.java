@@ -12,10 +12,6 @@ public class Influencer  extends Funcionario{
 		// TODO Auto-generated constructor stub
 	}
 
-	@Override
-	public void calculaSalario() {
-		// TODO Auto-generated method stub
-		
-	}
+	
 	
 }
